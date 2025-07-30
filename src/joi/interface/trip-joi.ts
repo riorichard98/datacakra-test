@@ -8,4 +8,5 @@ export interface UpsertTripRequest {
   endDate: Date;
   startDate: Date;
   tripId?: string;
+  userId?: string;
 }
