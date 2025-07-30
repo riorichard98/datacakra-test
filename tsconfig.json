@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "index.ts",
+    "src"
+  ],
+  "typeRoots": [
+    "./node_modules/@types",
+    "./src/types"
+  ],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  }
+}
