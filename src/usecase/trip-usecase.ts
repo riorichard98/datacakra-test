@@ -77,7 +77,10 @@ const listTrip = async ({ limit, offset }: ListTripRequest, userId: string): Pro
     const listTrip = await prisma.trip.findMany({
         where: { userId },
         skip: offset,
-        take: limit
+        take: limit,
+        orderBy: {
+            startDate: 'desc'
+        }
     })
     return listTrip.map(e => ({
         destination: e.destination,
