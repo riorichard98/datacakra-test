@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  TOURIST
+}
+
+model User {
+  userId       String   @id @default(uuid()) @map("user_id")
+  fullName     String   @map("full_name")
+  email        String   @map("email")
+  passwordHash String   @map("password_hash")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @default(now()) @updatedAt @map("updated_at")
+  role         Role     @map("role")
+  trips        Trip[]
+
+  @@unique([email, role])
+  @@map("users")
+}
+
+model Trip {
+  tripId      String   @id @default(uuid()) @map("trip_id")
+  userId      String   @map("user_id")
+  startDate   DateTime @map("start_date")
+  endDate     DateTime @map("end_date")
+  destination String   @map("destination")
+  user        User     @relation(fields: [userId], references: [userId])
+
+  @@map("trips")
+}
