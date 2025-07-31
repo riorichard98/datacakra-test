@@ -3,10 +3,21 @@
  * Do not modify this file manually
  */
 
-export interface UpsertTripRequest {
+export interface InsertTripRequest {
   destination: string;
-  endDate: Date;
-  startDate: Date;
-  tripId?: string;
-  userId?: string;
+  endDate: string;
+  startDate: string;
+  userId: string;
+}
+
+export interface ListTripRequest {
+  limit?: number;
+  offset?: number;
+}
+
+export interface UpdateTripRequest {
+  destination: string;
+  endDate: string;
+  startDate: string;
+  tripId: string;
 }
