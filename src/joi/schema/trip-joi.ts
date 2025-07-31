@@ -18,8 +18,15 @@ const tripBaseSchema = Joi.object({
     startDate: utcDate.required(),
     endDate: utcDate.required()
 }).custom((value, helpers) => {
+    const now = dayjs()
     const start = dayjs(value.startDate)
     const end = dayjs(value.endDate)
+
+    if (start.isBefore(now)) {
+        return helpers.error('any.invalid', {
+          message: 'startDate tidak boleh di masa lalu (minimal sekarang)'
+        })
+      }
 
     if (!start.isBefore(end)) {
         return helpers.error('any.invalid', { message: 'endDate harus setelah startDate' })
