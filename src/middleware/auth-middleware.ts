@@ -27,3 +27,17 @@ export const authMiddleware = async (req: Request, _: Response, next: NextFuncti
         })
     }
 }
+
+export const adminMiddleware = async (req: Request, _: Response, next: NextFunction) => {
+    try {
+        if (req.user.role !== 'ADMIN') {
+            throw new Error('invalid user');
+        }
+        next()
+    } catch (error) {
+        next({
+            statusCode: RESPONSE_CODE.FORBIDDEN,
+            message: GENERAL_ERROR_MESSAGE.UNAUTHORIZED
+        })
+    }
+}
