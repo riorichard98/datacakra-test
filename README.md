@@ -1,42 +1,100 @@
-# Deploy Node.js App di Replit + PM2 + UptimeRobot
+# Node.js App – Local Development & Deployment with Fly.io
 
-## 1. Connect ke Replit
+## 🚀 Jalankan Secara Lokal
 
-* Masuk ke Replit
-* Pilih "Import from GitHub"
-* Masukkan URL repo ini
+### 1. Clone Repository
 
-## 2. Copy .env ke Replit
+### 2. Setup Environment Variable
 
-* Buat file baru dengan nama `.env`
-* Salin semua isi dari file `.env` lokal ke file `.env` di Replit
+* Buat file `.env` di root folder.
+* Salin semua variabel dari `.env` lokal kamu ke file tersebut.
 
-## 3. Install dan Build
+### 3. Install Dependencies
 
 ```bash
 npm install
+```
+
+### 4. Jalankan Aplikasi
+
+```bash
+npm run start
+```
+
+> Pastikan kamu sudah build project (jika menggunakan TypeScript):
+
+```bash
 npm run build
 ```
 
-## 4. Jalankan dengan PM2
+---
+
+## ☁️ Deploy ke Fly.io
+
+### Prasyarat
+
+* Akun [Fly.io](https://fly.io)
+* `flyctl` CLI (jika belum, install dengan perintah berikut):
 
 ```bash
-npm install -g pm2
-pm2 start dist/index.js
+curl -L https://fly.io/install.sh | sh
 ```
 
-## 5. Gunakan UptimeRobot
+Pastikan `flyctl` tersedia di PATH kamu. Cek dengan:
 
-* Buka [https://uptimerobot.com](https://uptimerobot.com)
-* Daftar/Login
-* Add monitor:
-
-  * Type: HTTP(s)
-  * URL: (pakai URL dari Replit, misal: `https://nama-repl.username.repl.co`)
-  * Interval: 5 menit
-
-UptimeRobot akan terus nge-ping server supaya tetap hidup.
+```bash
+flyctl --version
+```
 
 ---
 
-Selesai.
+### 1. Login ke Fly.io
+
+```bash
+flyctl auth login
+```
+
+---
+
+### 2. Inisialisasi Project
+
+Jika belum punya `fly.toml`, jalankan:
+
+```bash
+flyctl launch
+```
+
+* Pilih nama aplikasi
+* Pilih region (misalnya: `sin` untuk Singapura)
+* Pilih "No" saat ditanya apakah ingin membuat database
+* Pilih "Yes" untuk membuat dan menyimpan `fly.toml`
+
+> Jika sudah punya `fly.toml`, lewati langkah ini.
+
+---
+
+### 3. Deploy Aplikasi
+
+```bash
+flyctl deploy
+```
+
+Tunggu proses selesai. Fly akan membangun dan menjalankan aplikasi kamu.
+
+---
+
+### 4. Buka Aplikasi
+
+```bash
+flyctl open
+```
+
+Atau buka manual via URL:
+
+```
+https://your-app-name.fly.dev
+```
+
+---
+
+Selesai ✅
