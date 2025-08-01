@@ -24,6 +24,7 @@
 	},
 	"scripts": {
 		"joi-generate": "ts-node src/joi/generate-interface-from-joi.ts",
-		"start": "nodemon"
+		"start": "nodemon",
+		"build": "npx tsc"
 	}
 }
