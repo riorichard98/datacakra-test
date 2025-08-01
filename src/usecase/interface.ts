@@ -39,3 +39,10 @@ export type ListTripResponseData = {
     startDate: Date
     tripId: string
 }[]
+
+export interface UserTripTime {
+    endDate: Date | string
+    startDate: Date | string
+    userId: string
+    tripId?: string
+}
