@@ -1,19 +1,21 @@
+import { Trip } from "@prisma/client"
 import { GENERAL_ERROR_MESSAGE } from "../constants/general-error-message"
 import { TRIP_ERROR_MESSAGE } from "../constants/trip-error-message"
 import { InsertTripRequest, ListTripRequest, UpdateTripRequest } from "../joi/interface"
 import { throwRequestError } from "../middleware/error-handler"
 import prisma from "../models/primsa-client"
-import { DeleteTripResponseData, InsertTripResponseData, ListTripResponseData, UpdateTripResponseData } from "./interface"
+import {
+    DeleteTripResponseData,
+    InsertTripResponseData,
+    ListTripResponseData,
+    UpdateTripResponseData,
+    UserTripTime
+} from "./interface"
 
-const insertTrip = async (data: InsertTripRequest): Promise<InsertTripResponseData> => {
-    const foundUser = await prisma.user.findFirst({
-        where: {
-            userId: data.userId
-        }
-    })
-    if (!foundUser) throwRequestError(GENERAL_ERROR_MESSAGE.USER_NOT_FOUND)
+const validateNoConflictTrip = async (data: UserTripTime): Promise<void> => {
     const conflctTripFound = await prisma.trip.findFirst({
         where: {
+            ...(data.tripId ? { tripId: { not: data.tripId } } : {}), // for update check another trip that conflicted
             userId: data.userId,
             startDate: {
                 lt: data.endDate // find trip that already started before new trip ended
@@ -24,6 +26,20 @@ const insertTrip = async (data: InsertTripRequest): Promise<InsertTripResponseDa
         }
     })
     if (conflctTripFound) throwRequestError(TRIP_ERROR_MESSAGE.TRIP_TIME_CONFLICT)
+}
+
+const insertTrip = async (data: InsertTripRequest): Promise<InsertTripResponseData> => {
+    const foundUser = await prisma.user.findFirst({
+        where: {
+            userId: data.userId
+        }
+    })
+    if (!foundUser) throwRequestError(GENERAL_ERROR_MESSAGE.USER_NOT_FOUND)
+    await validateNoConflictTrip({
+        endDate: data.endDate,
+        startDate: data.startDate,
+        userId: data.userId
+    })
     const insertedTrip = await prisma.trip.create({
         data: {
             userId: data.userId as string,
@@ -47,6 +63,12 @@ const updateTrip = async (data: UpdateTripRequest): Promise<UpdateTripResponseDa
         }
     })
     if (!foundTrip) throwRequestError(GENERAL_ERROR_MESSAGE.DATA_NOT_EXISTS)
+    await validateNoConflictTrip({
+        endDate: data.endDate,
+        startDate: data.startDate,
+        userId: (foundTrip as Trip).userId,
+        tripId: data.tripId
+    })
     const updatedTrip = await prisma.trip.update({
         where: {
             tripId: data.tripId
