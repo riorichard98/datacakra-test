@@ -36,3 +36,14 @@ model Trip {
 
   @@map("trips")
 }
+
+model TripAnalytic {
+  tripAnalitycId        String   @id @default(uuid()) @map("trip_analytic_id")
+  generatedAt           DateTime @default(now()) @map("generated_at")
+  totalTrips            Int      @map("total_trips")
+  totalTourists         Int      @map("total_tourists")
+  avgTripDurationInDays Float    @map("avg_trip_duration_in_days")
+  topDestinations       Json     @map("top_destination")
+
+  @@map("trip_analytics")
+}
