@@ -9,10 +9,11 @@
 * Buat file `.env` di root folder.
 * Salin semua variabel dari `.env` lokal kamu ke file tersebut.
 
-### 3. Install Dependencies
+### 3. Install Dependencies & generate prisma
 
 ```bash
 npm install
+npx prisma generate
 ```
 
 ### 4. Jalankan Aplikasi
