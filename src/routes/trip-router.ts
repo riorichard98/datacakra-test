@@ -9,6 +9,7 @@ const tripRouter = Router();
 tripRouter.use(authMiddleware)
 
 tripRouter.get('', h(tripHandler.listTrip)); // list trip
+tripRouter.get('/history-pdf', tripHandler.printTripHistoryPDF); // history pdf
 
 tripRouter.use(adminMiddleware) // admin only
 tripRouter.post('', h(tripHandler.insertTrip)); // insert trip
