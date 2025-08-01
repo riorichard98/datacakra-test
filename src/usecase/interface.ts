@@ -46,3 +46,13 @@ export interface UserTripTime {
     userId: string
     tripId?: string
 }
+
+export interface TripAnalytics {
+    totalTrips: number
+    totalTourists: number
+    avgTripDurationInDays: number
+    topDestinations: {
+        destination: string
+        count: number
+    }[]
+}
