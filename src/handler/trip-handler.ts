@@ -4,6 +4,7 @@ import { listTripSchema, insertTripSchema, updateTripSchema } from "../joi/schem
 import { tripUsecase } from "../usecase/trip-usecase"
 import { LogicHandler } from "../middleware/interface"
 import { RESPONSE_CODE } from "../constants/response-code"
+import { tripAnalyticsUsecase } from "../usecase/trip-analytics-usecase"
 
 const insertTrip: LogicHandler = async (req: Request) => {
     const validatedBody = validateRequest(insertTripSchema, req.body)
@@ -28,9 +29,14 @@ const listTrip: LogicHandler = async (req: Request) => {
     return { data }
 }
 
+const tripAnalytics: LogicHandler = async (_: Request) => {
+    const data = await tripAnalyticsUsecase.getLatestTripAnalytics()
+    return { data }
+}
 export const tripHandler = {
     insertTrip,
     updateTrip,
     deleteTrip,
-    listTrip
+    listTrip,
+    tripAnalytics
 }

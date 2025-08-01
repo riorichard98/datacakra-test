@@ -14,5 +14,6 @@ tripRouter.use(adminMiddleware) // admin only
 tripRouter.post('', h(tripHandler.insertTrip)); // insert trip
 tripRouter.put('', h(tripHandler.updateTrip)) // update trip
 tripRouter.delete('/:tripId', h(tripHandler.deleteTrip)); // delete trip
+tripRouter.get('/analytics', h(tripHandler.tripAnalytics)) // trip analytics
 
 export default tripRouter;
