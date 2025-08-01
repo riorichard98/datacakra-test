@@ -24,9 +24,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/auth/login",
+							"raw": "https://datacakra-test.fly.dev//auth/login",
 							"host": [
-								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+								"https://datacakra-test.fly.dev/"
 							],
 							"path": [
 								"auth",
@@ -51,9 +51,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/auth/login",
+							"raw": "https://datacakra-test.fly.dev//auth/login",
 							"host": [
-								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+								"https://datacakra-test.fly.dev/"
 							],
 							"path": [
 								"auth",
@@ -93,9 +93,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/tourists",
+							"raw": "https://datacakra-test.fly.dev//tourists",
 							"host": [
-								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+								"https://datacakra-test.fly.dev/"
 							],
 							"path": [
 								"tourists"
@@ -132,9 +132,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/tourists",
+							"raw": "https://datacakra-test.fly.dev//tourists",
 							"host": [
-								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+								"https://datacakra-test.fly.dev/"
 							],
 							"path": [
 								"tourists"
@@ -168,9 +168,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/tourists/3f961961-7cbb-42d5-a070-9e6ecf7bbf5c",
+							"raw": "https://datacakra-test.fly.dev//tourists/3f961961-7cbb-42d5-a070-9e6ecf7bbf5c",
 							"host": [
-								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+								"https://datacakra-test.fly.dev/"
 							],
 							"path": [
 								"tourists",
@@ -204,9 +204,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips",
+									"raw": "https://datacakra-test.fly.dev//trips",
 									"host": [
-										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+										"https://datacakra-test.fly.dev/"
 									],
 									"path": [
 										"trips"
@@ -231,9 +231,9 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips/history-pdf",
+									"raw": "https://datacakra-test.fly.dev//trips/history-pdf",
 									"host": [
-										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+										"https://datacakra-test.fly.dev/"
 									],
 									"path": [
 										"trips",
@@ -273,9 +273,9 @@
 									}
 								},
 								"url": {
-									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips",
+									"raw": "https://datacakra-test.fly.dev//trips",
 									"host": [
-										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+										"https://datacakra-test.fly.dev/"
 									],
 									"path": [
 										"trips"
@@ -309,9 +309,9 @@
 									}
 								},
 								"url": {
-									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips",
+									"raw": "https://datacakra-test.fly.dev//trips",
 									"host": [
-										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+										"https://datacakra-test.fly.dev/"
 									],
 									"path": [
 										"trips"
@@ -345,9 +345,9 @@
 									}
 								},
 								"url": {
-									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips/4b52688d-83c5-4f81-bf8e-5d6ebd063d7e",
+									"raw": "https://datacakra-test.fly.dev//trips/4b52688d-83c5-4f81-bf8e-5d6ebd063d7e",
 									"host": [
-										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+										"https://datacakra-test.fly.dev/"
 									],
 									"path": [
 										"trips",
@@ -385,9 +385,9 @@
 									}
 								},
 								"url": {
-									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips/analytics",
+									"raw": "https://datacakra-test.fly.dev//trips/analytics",
 									"host": [
-										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
+										"https://datacakra-test.fly.dev/"
 									],
 									"path": [
 										"trips",
