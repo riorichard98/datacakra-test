@@ -26,9 +26,8 @@
 						"url": {
 							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/auth/login",
 							"host": [
-								"localhost"
+								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 							],
-							"port": "3000",
 							"path": [
 								"auth",
 								"login"
@@ -54,9 +53,8 @@
 						"url": {
 							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/auth/login",
 							"host": [
-								"localhost"
+								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 							],
-							"port": "3000",
 							"path": [
 								"auth",
 								"login"
@@ -97,9 +95,8 @@
 						"url": {
 							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/tourists",
 							"host": [
-								"localhost"
+								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 							],
-							"port": "3000",
 							"path": [
 								"tourists"
 							]
@@ -137,9 +134,8 @@
 						"url": {
 							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/tourists",
 							"host": [
-								"localhost"
+								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 							],
-							"port": "3000",
 							"path": [
 								"tourists"
 							]
@@ -174,9 +170,8 @@
 						"url": {
 							"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/tourists/3f961961-7cbb-42d5-a070-9e6ecf7bbf5c",
 							"host": [
-								"localhost"
+								"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 							],
-							"port": "3000",
 							"path": [
 								"tourists",
 								"3f961961-7cbb-42d5-a070-9e6ecf7bbf5c"
@@ -211,9 +206,8 @@
 								"url": {
 									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips",
 									"host": [
-										"localhost"
+										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 									],
-									"port": "3000",
 									"path": [
 										"trips"
 									]
@@ -239,9 +233,8 @@
 								"url": {
 									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips/history-pdf",
 									"host": [
-										"localhost"
+										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 									],
-									"port": "3000",
 									"path": [
 										"trips",
 										"history-pdf"
@@ -282,9 +275,8 @@
 								"url": {
 									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips",
 									"host": [
-										"localhost"
+										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 									],
-									"port": "3000",
 									"path": [
 										"trips"
 									]
@@ -319,9 +311,8 @@
 								"url": {
 									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips",
 									"host": [
-										"localhost"
+										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 									],
-									"port": "3000",
 									"path": [
 										"trips"
 									]
@@ -356,9 +347,8 @@
 								"url": {
 									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips/4b52688d-83c5-4f81-bf8e-5d6ebd063d7e",
 									"host": [
-										"localhost"
+										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 									],
-									"port": "3000",
 									"path": [
 										"trips",
 										"4b52688d-83c5-4f81-bf8e-5d6ebd063d7e"
@@ -397,9 +387,8 @@
 								"url": {
 									"raw": "https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev/trips/analytics",
 									"host": [
-										"localhost"
+										"https://73541768-2fe0-4c21-ab15-d9d831f6e438-00-26a2hxpv1z3u7.pike.replit.dev"
 									],
-									"port": "3000",
 									"path": [
 										"trips",
 										"analytics"
