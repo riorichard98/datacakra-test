@@ -24,7 +24,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://datacakra-test.fly.dev//auth/login",
+							"raw": "https://datacakra-test.fly.dev/auth/login",
 							"host": [
 								"https://datacakra-test.fly.dev/"
 							],
@@ -51,7 +51,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://datacakra-test.fly.dev//auth/login",
+							"raw": "https://datacakra-test.fly.dev/auth/login",
 							"host": [
 								"https://datacakra-test.fly.dev/"
 							],
@@ -93,7 +93,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://datacakra-test.fly.dev//tourists",
+							"raw": "https://datacakra-test.fly.dev/tourists",
 							"host": [
 								"https://datacakra-test.fly.dev/"
 							],
@@ -132,7 +132,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://datacakra-test.fly.dev//tourists",
+							"raw": "https://datacakra-test.fly.dev/tourists",
 							"host": [
 								"https://datacakra-test.fly.dev/"
 							],
@@ -168,7 +168,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://datacakra-test.fly.dev//tourists/3f961961-7cbb-42d5-a070-9e6ecf7bbf5c",
+							"raw": "https://datacakra-test.fly.dev/tourists/3f961961-7cbb-42d5-a070-9e6ecf7bbf5c",
 							"host": [
 								"https://datacakra-test.fly.dev/"
 							],
@@ -204,7 +204,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://datacakra-test.fly.dev//trips",
+									"raw": "https://datacakra-test.fly.dev/trips",
 									"host": [
 										"https://datacakra-test.fly.dev/"
 									],
@@ -231,7 +231,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "https://datacakra-test.fly.dev//trips/history-pdf",
+									"raw": "https://datacakra-test.fly.dev/trips/history-pdf",
 									"host": [
 										"https://datacakra-test.fly.dev/"
 									],
@@ -273,7 +273,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://datacakra-test.fly.dev//trips",
+									"raw": "https://datacakra-test.fly.dev/trips",
 									"host": [
 										"https://datacakra-test.fly.dev/"
 									],
@@ -309,7 +309,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://datacakra-test.fly.dev//trips",
+									"raw": "https://datacakra-test.fly.dev/trips",
 									"host": [
 										"https://datacakra-test.fly.dev/"
 									],
@@ -345,7 +345,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://datacakra-test.fly.dev//trips/4b52688d-83c5-4f81-bf8e-5d6ebd063d7e",
+									"raw": "https://datacakra-test.fly.dev/trips/4b52688d-83c5-4f81-bf8e-5d6ebd063d7e",
 									"host": [
 										"https://datacakra-test.fly.dev/"
 									],
@@ -385,7 +385,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://datacakra-test.fly.dev//trips/analytics",
+									"raw": "https://datacakra-test.fly.dev/trips/analytics",
 									"host": [
 										"https://datacakra-test.fly.dev/"
 									],
